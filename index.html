@@ -1,0 +1,1036 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Welcome to Hesham Rabei's portfolio. Explore my projects, skills, and achievements.">
+<meta property="og:url" content="https://mohamedahmed580.github.io/My-portfolio/">
+<meta property="og:title" content="Hesham Rabei's Portfolio">
+<meta name="twitter:title" content="Hesham Rabei's Portfolio">
+
+    <title>Hesham Rabei's Portfolio</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="tailwind-config.js"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700;800&display=swap" rel="stylesheet">
+    <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+    <link rel="stylesheet" href="style.css">
+    <script src="theme.js"></script>
+</head>
+<body class="text-gray-900 dark:text-gray-100 transition-colors duration-300">
+
+<!-- Navigation Bar -->
+<nav class="sticky top-0 z-50 w-full bg-white/80 dark:bg-neutral-950/80 backdrop-blur-md shadow-sm dark:shadow-blue-900/10">
+    <div class="container mx-auto px-6 py-4 flex justify-between items-center">
+        <a href="#" class="text-2xl font-bold text-Brown-600 dark:text-Brown-400">Hesham Rabei</a>
+
+        <div class="md:hidden">
+            <button id="menu-toggle" class="text-gray-900 dark:text-gray-100">
+                <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16m-7 6h7" />
+                </svg>
+            </button>
+        </div>
+
+        <div class="hidden md:flex items-center space-x-6">
+            <a href="#hero" class="text-gray-700 dark:text-gray-300 hover:text-Brown-600 dark:hover:text-Brown-400 transition duration-200">Home</a>
+
+            <a href="#about" class="text-gray-700 dark:text-gray-300 hover:text-Brown-600 dark:hover:text-Brown-400 transition duration-200">About</a>
+
+            <a href="#education" class="text-gray-700 dark:text-gray-300 hover:text-Brown-600 dark:hover:text-Brown-400 transition duration-200">Education</a>
+
+            <a href="#skills" class="text-gray-700 dark:text-gray-300 hover:text-Brown-600 dark:hover:text-Brown-400 transition duration-200">Skills</a>
+
+            <a href="#experience" class="text-gray-700 dark:text-gray-300 hover:text-Brown-600 dark:hover:text-Brown-400 transition duration-200">Experience</a>
+
+            <a href="#services" class="text-gray-700 dark:text-gray-300 hover:text-Brown-600 dark:hover:text-Brown-400 transition duration-200">Services</a>
+
+            <a href="#projects" class="text-gray-700 dark:text-gray-300 hover:text-Brown-600 dark:hover:text-Brown-400 transition duration-200">Projects</a>
+
+            <a href="#courses" class="text-gray-700 dark:text-gray-300 hover:text-Brown-600 dark:hover:text-Brown-400 transition duration-200">Courses</a>
+
+            <a href="#contact" class="text-gray-700 dark:text-gray-300 hover:text-Brown-600 dark:hover:text-Brown-400 transition duration-200">Contact</a>
+        </div>
+
+        <button onclick="toggleTheme()" class="hidden md:block p-2 rounded-full hover:bg-gray-200 dark:hover:bg-neutral-800 transition duration-200">
+            <svg id="moon-icon" xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 text-blue-600" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M20.354 15.354A9 9 0 018.646 3.646 9.003 9.003 0 0012 21a9.003 9.003 0 008.354-5.646z" />
+            </svg>
+
+            <svg id="sun-icon" xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 text-yellow-400 hidden" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 3v1m0 16v1m8.364-8.364l-.707-.707M4.343 4.343l-.707-.707m16.97 0l-.707.707M4.343 19.657l.707.707M12 5a7 7 0 100 14 7 7 0 000-14z" />
+            </svg>
+        </button>
+    </div>
+
+    <div id="mobile-menu" class="hidden md:hidden bg-white dark:bg-neutral-900/90 backdrop-blur-md">
+
+        <a href="#hero" class="block py-2 px-6 text-gray-700 dark:text-gray-300 hover:bg-Brown-100 dark:hover:bg-Brown-900">Home</a>
+
+        <a href="#about" class="block py-2 px-6 text-gray-700 dark:text-gray-300 hover:bg-Brown-100 dark:hover:bg-Brown-900">About</a>
+
+        <a href="#education" class="block py-2 px-6 text-gray-700 dark:text-gray-300 hover:bg-Brown-100 dark:hover:bg-Brown-900">Education</a>
+
+        <a href="#skills" class="block py-2 px-6 text-gray-700 dark:text-gray-300 hover:bg-Brown-100 dark:hover:bg-Brown-900">Skills</a>
+
+        <a href="#experience" class="block py-2 px-6 text-gray-700 dark:text-gray-300 hover:bg-Brown-100 dark:hover:bg-Brown-900">Experience</a>
+
+        <a href="#services" class="block py-2 px-6 text-gray-700 dark:text-gray-300 hover:bg-Brown-100 dark:hover:bg-Brown-900">Services</a>
+
+        <a href="#projects" class="block py-2 px-6 text-gray-700 dark:text-gray-300 hover:bg-Brown-100 dark:hover:bg-Brown-900">Projects</a>
+
+        <a href="#courses" class="block py-2 px-6 text-gray-700 dark:text-gray-300 hover:bg-Brown-100 dark:hover:bg-Brown-900">Courses</a>
+
+        <a href="#contact" class="block py-2 px-6 text-gray-700 dark:text-gray-300 hover:bg-Brown-100 dark:hover:bg-Brown-900">Contact</a>
+
+        <div class="p-4 flex justify-center">
+            <button onclick="toggleTheme()" class="p-2 rounded-full hover:bg-gray-200 dark:hover:bg-neutral-800 transition duration-200">
+
+                <svg id="moon-icon-mobile" xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 text-blue-600" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M20.354 15.354A9 9 0 018.646 3.646 9.003 9.003 0 0012 21a9.003 9.003 0 008.354-5.646z" />
+                </svg>
+
+                <svg id="sun-icon-mobile" xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 text-yellow-400 hidden" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 3v1m0 16v1m8.364-8.364l-.707-.707M4.343 4.343l-.707-.707m16.97 0l-.707.707M4.343 19.657l.707.707M12 5a7 7 0 100 14 7 7 0 000-14z" />
+                </svg>
+
+            </button>
+        </div>
+    </div>
+</nav>
+
+<section id="hero" class="relative overflow-hidden pt-20 pb-32">
+  <div class="container mx-auto px-6 z-10 relative flex flex-col md:flex-row items-center justify-between">
+    
+    <!-- النصوص -->
+    <div class="w-full md:w-1/2 text-center md:text-left">
+      
+      <h1 class="text-4xl md:text-6xl font-extrabold my-4 fade-in">
+        I'm Hesham Rabei
+      </h1>
+      
+
+
+            <h2 class="text-2xl md:text-3xl font-medium !text-white fade-in" style="animation-delay:0.3s;">
+                Data Analyst | Geographic Information Systems Student
+            </h2>
+
+            <p class="mt-4 text-lg max-w-lg mx-auto md:mx-0 !text-white fade-in" style="animation-delay:0.5s">
+                Data Analyst and fourth-year Geographic Information Systems student at Ain Shams University,
+                I’m passionate about using data to solve problems and make better decisions,
+                combining my knowledge of Geography with my skills in Excel and Power BI.
+            </p>
+
+        </div>
+
+    <!-- الصورة -->
+    <div class="mt-12 md:mt-0 w-48 h-48 md:w-80 md:h-80 bg-gradient-to-br from-blue-500 to-blue-700 dark:from-blue-600 dark:to-blue-800 rounded-full flex items-center justify-center shadow-2xl overflow-hidden bounce">
+      
+      <img src="D:\Data\Myportfolio - Hesham\photo.jpeg" alt="Hesham Rabei" class="w-full h-full object-cover rounded-full" 
+           onerror="this.style.display='none'; this.nextElementSibling.style.display='block';">
+      
+      <svg xmlns="http://www.w3.org/2000/svg" class="h-24 w-24 md:h-40 md:w-40 text-white hidden" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5"
+              d="M16 7a4 4 0 11-8 0 4 4 0 018 0zM12 14a7 7 0 00-7-7h14a7 7 0 00-7-7z" />
+      </svg>
+
+    </div>
+    
+  </div>
+</section>
+
+
+<!-- About Section --> 
+<section id="about" class="py-20 bg-gray-50 dark:bg-neutral-900 slide-up"> 
+  <div class="container mx-auto px-6"> 
+    <h2 class="text-3xl font-bold text-center mb-12 text-Brown-600 dark:text-Brown-400 fade-in">
+      About Me
+    </h2> 
+
+    <div class="bg-white dark:bg-neutral-800 rounded-xl shadow-lg p-8 md:p-12 max-w-4xl mx-auto fade-in" style="animation-delay:0.2s"> 
+        
+        <div>
+            <p class="text-gray-600 dark:text-gray-300 mb-5">
+                I am a Geography student at Ain Shams University with a strong interest in Data Analytics and Geographic Information Systems (GIS).
+                I am developing my skills in data cleaning, analysis, visualization, and extracting meaningful insights using Excel and Power BI.
+            </p>
+
+            <p class="text-gray-600 dark:text-gray-300 mb-5">
+
+                My academic background in Geography helps me understand spatial patterns and relationships,
+                while my analytical mindset enables me to approach problems logically and identify data-driven solutions. 
+                I am passionate about transforming raw data into clear, actionable insights that support better decision-making.
+            </p>
+
+            <p class="text-gray-600 dark:text-gray-300 mb-5">
+                I value continuous learning, responsibility, and delivering tasks with accuracy and commitment.
+                My goal is to grow as a Data Analyst by working on practical projects, 
+                strengthening my technical skills, 
+                and combining geographical knowledge with data analytics to create meaningful business value.
+            </p>
+        </div>
+
+    </div> 
+  </div> 
+</section>
+
+<!-- Education Section -->
+
+
+<section id="education" class="section-bg py-20 slide-up">
+  <div class="container mx-auto px-6">
+    
+    <h2 class="text-3xl font-bold text-center mb-12 text-Brown-600 dark:text-white-400 fade-in">
+      Education
+    </h2>
+
+    <div class="bg-white dark:bg-neutral-900 rounded-xl shadow-lg p-8 md:p-12 max-w-4xl mx-auto fade-in" style="animation-delay:0.2s">
+      
+      <div class="border-l-4 border-Brown-500 pl-4">
+        <h3 class="text-2xl font-bold text-gray-900 dark:text-white">
+          Bachelor of Arts, Geographic Information Systems
+        </h3>
+
+        <p class="font-medium text-gray-700 dark:text-gray-300 mt-2">
+          Ain Shams University | Cairo, Egypt
+        </p>
+
+        <p class="text-sm text-gray-500 dark:text-gray-400 mt-1">
+          Sep 2023 – Jun 2027
+        </p>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+
+
+<!-- Skills Section --> 
+<section id="skills" class="py-24 bg-gray-50 dark:bg-neutral-900"> 
+  <div class="container mx-auto px-6"> 
+    <h2 class="text-3xl font-bold text-center mb-14 text-Brown-600 dark:text-Brown-400 fade-in">
+      My Skills
+    </h2> 
+ 
+    <div class="max-w-5xl mx-auto grid gap-8"> 
+ 
+      <!-- AI Skills --> 
+      <div class="fade-in"> 
+       
+        <div class="flex flex-wrap justify-center gap-4"> 
+          
+          <div class="skill-card bg-white dark:bg-neutral-800 p-4 rounded-xl shadow-md cursor-pointer text-gray-900 dark:text-gray-100 text-center font-medium"> 
+            Excel
+          </div>
+
+          <div class="skill-card bg-white dark:bg-neutral-800 p-4 rounded-xl shadow-md cursor-pointer text-gray-900 dark:text-gray-100 text-center font-medium"> 
+           Power BI
+          </div>
+          
+          <div class="skill-card bg-white dark:bg-neutral-800 p-4 rounded-xl shadow-md cursor-pointer text-gray-900 dark:text-gray-100 text-center font-medium"> 
+            Tableau
+          </div>
+
+          <div class="skill-card bg-white dark:bg-neutral-800 p-4 rounded-xl shadow-md cursor-pointer text-gray-900 dark:text-gray-100 text-center font-medium"> 
+            Python
+          </div>
+
+          <div class="skill-card bg-white dark:bg-neutral-800 p-4 rounded-xl shadow-md cursor-pointer text-gray-900 dark:text-gray-100 text-center font-medium"> 
+            NumPy
+          </div>
+
+          <div class="skill-card bg-white dark:bg-neutral-800 p-4 rounded-xl shadow-md cursor-pointer text-gray-900 dark:text-gray-100 text-center font-medium"> 
+            Pandas
+          </div>
+
+          <div class="skill-card bg-white dark:bg-neutral-800 p-4 rounded-xl shadow-md cursor-pointer text-gray-900 dark:text-gray-100 text-center font-medium"> 
+            Matplotlib
+          </div>
+
+          <div class="skill-card bg-white dark:bg-neutral-800 p-4 rounded-xl shadow-md cursor-pointer text-gray-900 dark:text-gray-100 text-center font-medium"> 
+            Seaborn
+          </div>
+
+          <div class="skill-card bg-white dark:bg-neutral-800 p-4 rounded-xl shadow-md cursor-pointer text-gray-900 dark:text-gray-100 text-center font-medium"> 
+            SQL
+          </div>
+
+          <div class="skill-card bg-white dark:bg-neutral-800 p-4 rounded-xl shadow-md cursor-pointer text-gray-900 dark:text-gray-100 text-center font-medium"> 
+            C#
+          </div>
+
+           <div class="skill-card bg-white dark:bg-neutral-800 p-4 rounded-xl shadow-md cursor-pointer text-gray-900 dark:text-gray-100 text-center font-medium"> 
+            Arc GIS Pro
+          </div>
+
+        </div> 
+      </div> 
+    </div> 
+  </div> 
+</section>
+
+        <!-- Experience Section -->
+        <section id="experience" class="py-20 bg-white dark:bg-neutral-800 slide-up" style="animation-delay:0.3s">
+          <div class="container mx-auto px-6">
+            <h2 class="text-3xl font-bold text-center mb-12 text-Brown-600 dark:text-Brown-400 fade-in">
+              My Experience
+            </h2>
+
+            <div class="max-w-4xl mx-auto flex justify-center fade-in" style="animation-delay:0.5s">
+
+                <!-- DEPI -->
+                <div class="bg-gray-50 dark:bg-neutral-900 p-6 rounded-xl shadow-md">
+                    <h3 class="text-xl font-bold text-gray-900 dark:text-white">
+                        Microsoft Machine Learning Engineer Trainee
+                    </h3>
+
+                    <p class="text-sm font-medium text-Brown-600 dark:text-Brown-400">
+                        Digital Egypt Pioneers Initiative (DEPI) — Training
+                    </p>
+
+                    <p class="text-sm text-gray-500 dark:text-gray-400 mb-4">
+                        Jul 2026 - Present
+                    </p>
+                      <ul class="list-disc list-inside space-y-2 text-gray-700 dark:text-gray-300">
+                        <li>Developed practical skills in data cleaning, data analysis, and visualization using Excel and Power BI.</li>
+                        <li>Learned how to use SQL to work with data, extract insights, and support data-driven decisions.</li>
+                        <li>Gained experience in building interactive dashboards and presenting insights to solve business problems.</li>
+                    </ul>
+                </div>
+
+            </div>
+          </div>
+        </section>
+
+        <!-- Offered Services Section -->
+        <section id="services" class="py-20 bg-gray-50 dark:bg-neutral-900 slide-up">
+          <div class="container mx-auto px-6">
+            <h2 class="text-3xl font-bold text-center mb-12 text-Brown-600 dark:text-Brown-400 fade-in">
+              Offered Services
+            </h2>
+
+            <div class="max-w-4xl mx-auto grid md:grid-cols-2 gap-8 fade-in" style="animation-delay:0.2s">
+
+              <!-- Data Cleaning & Preprocessing -->
+              <div class="bg-white dark:bg-neutral-800 p-6 rounded-xl shadow-md">
+                <h3 class="text-xl font-bold text-gray-900 dark:text-white">
+                  Data Cleaning & Preprocessing
+                </h3>
+                <p class="text-gray-600 dark:text-gray-300 mt-3">
+                  Clean and organize raw data using Excel and PowerBI.
+                </p>
+              </div>
+
+              <!-- Data Analysis & Visualization -->
+              <div class="bg-white dark:bg-neutral-800 p-6 rounded-xl shadow-md">
+                <h3 class="text-xl font-bold text-gray-900 dark:text-white">
+                  Data Analysis & Visualization
+                </h3>
+                <p class="text-gray-600 dark:text-gray-300 mt-3">
+                  Analyzing datasets and creating clear visualizations using Pandas, Matplotlib, and Seaborn to extract useful insights.
+                </p>
+              </div>
+
+              <div class="bg-white dark:bg-neutral-800 p-6 rounded-xl shadow-md">
+                <h3 class="text-xl font-bold text-gray-900 dark:text-white">
+                  Bulit Dashboards
+                </h3>
+                <p class="text-gray-600 dark:text-gray-300 mt-3">
+                  Create interactive dashboards and reports using Power BI.
+                </p>
+              </div>
+
+            </div>
+          </div>
+        </section>
+
+
+        <!-- Projects Section -->
+        <section id="projects" class="py-20 bg-white dark:bg-neutral-800 slide-up">
+          <div class="container mx-auto px-6">
+
+            <h2 class="text-3xl font-bold text-center mb-12 text-amber-900 dark:text-amber-200 fade-in">
+              Projects
+            </h2>
+
+            <div class="max-w-5xl mx-auto fade-in" style="animation-delay:0.2s">
+
+              <!-- Saudi Market Sales Intelligence Dashboard -->
+              <div class="project-card bg-gray-50 dark:bg-neutral-900 rounded-xl shadow-lg overflow-hidden mb-12">
+
+                <!-- Project Image -->
+                <div class="w-full bg-gray-100 dark:bg-neutral-950 flex justify-center items-center p-4">
+                  <img
+                    src="D:\Data\Myportfolio - Hesham\photo1.jpeg"
+                    alt="Saudi Market Sales Intelligence Dashboard"
+                    class="w-full max-w-4xl h-auto max-h-[500px] object-contain rounded-lg"
+                  >
+                </div>
+
+                <!-- Project Content -->
+                <div class="p-6 md:p-8">
+
+                  <h3 class="text-2xl font-bold text-gray-900 dark:text-white">
+                    Saudi Market Sales Intelligence Dashboard
+                  </h3>
+
+                  <!-- Case Study -->
+                  <div class="mt-6 space-y-6 text-gray-700 dark:text-gray-300">
+
+                    <!-- Overview -->
+                    <div>
+                      <h2 class="text-xl font-bold text-amber-900 dark:text-amber-200 border-b-2 border-amber-200 dark:border-amber-800 pb-2 mb-3">
+                        Overview
+                      </h2>
+
+                      <p class="mt-1">
+                        An end-to-end Business Intelligence project analyzing the performance of "Saudi Market",
+                        a multi-branch supermarket chain operating across 12 branches in Greater Cairo
+                        (Nasr City, City Stars, Maadi, Heliopolis, Zamalek, Dokki, New Cairo,
+                        Mohandeseen, Sheikh Zayed, 6th of October, and more) over a full year.
+                      </p>
+                    </div>
+
+                    <!-- What I Built -->
+                    <div>
+                      <h2 class="text-xl font-bold text-amber-900 dark:text-amber-200 border-b-2 border-amber-200 dark:border-amber-800 pb-2 mb-3">
+                        What I Built
+                      </h2>
+
+                      <ul class="mt-1 list-decimal list-inside space-y-2">
+                        <li>KPI Cards – six headline performance indicators at a glance.</li>
+                        <li>Sales Trend Over Time – monthly sales line chart to spot seasonality.</li>
+                        <li>Sales by Branch &amp; Profit by Branch – side-by-side branch performance comparison.</li>
+                        <li>Sales by Category – donut chart showing revenue share across Grocery, Nuts, Oils, Coffee, Spices, Household, Beverages, and more.</li>
+                        <li>Top 10 Products by Sales – best-selling products ranking.</li>
+                        <li>Sales by Customer Type – new vs. returning customer revenue.</li>
+                        <li>Sales by Channel – in-store vs. online comparison.</li>
+                        <li>Interactive Slicers – Branch, Month, Category, and Channel filters for dynamic, drill-down analysis.</li>
+                      </ul>
+                    </div>
+
+                    <!-- Key Insights & Outcomes -->
+                    <div>
+                      <h2 class="text-xl font-bold text-amber-900 dark:text-amber-200 border-b-2 border-amber-200 dark:border-amber-800 pb-2 mb-3">
+                        Key Insights &amp; Outcomes
+                      </h2>
+
+                      <ul class="list-decimal list-inside space-y-3 mt-1">
+                        <li>
+                          <strong>Strong Profitability:</strong>
+                          A 41.67% profit margin indicates healthy retail profitability.
+                        </li>
+
+                        <li>
+                          <strong>Branch Performance:</strong>
+                          Nasr City and City Stars lead with approximately 95K in sales,
+                          while 6th of October and Mall of Arabia trail at around 65K,
+                          highlighting opportunities for improvement.
+                        </li>
+
+                        <li>
+                          <strong>Category Mix:</strong>
+                          Grocery accounts for the largest revenue share (21.2%),
+                          followed by Nuts (17.6%) and Oils (12.77%).
+                        </li>
+
+                        <li>
+                          <strong>Top-Selling Product:</strong>
+                          Olive Oil 500ml leads with approximately 70K in sales,
+                          followed by Sunflower Oil 1L and Rice 5kg.
+                        </li>
+
+                        <li>
+                          <strong>Customer Loyalty:</strong>
+                          Returning customers generate nearly twice the sales of new customers,
+                          indicating strong retention alongside an opportunity to attract new customers.
+                        </li>
+
+                        <li>
+                          <strong>Sales Channel Gap:</strong>
+                          In-store sales (approximately 0.8M) significantly exceed online sales
+                          (approximately 0.2M), highlighting an opportunity to grow e-commerce.
+                        </li>
+
+                        <li>
+                          <strong>Seasonality:</strong>
+                          Sales peak in October and November at approximately 90K,
+                          with noticeable declines in September and December.
+                        </li>
+                      </ul>
+                    </div>
+
+                  </div>
+
+                  <!-- Technologies -->
+                  <div class="mt-6">
+                    <h2 class="text-xl font-bold text-amber-900 dark:text-amber-200 border-b-2 border-amber-200 dark:border-amber-800 pb-2 mb-3">
+                      Technologies
+                    </h2>
+
+                    <div class="flex flex-wrap gap-3">
+                      <span class="bg-white dark:bg-neutral-800 px-4 py-2 rounded-lg shadow-sm text-gray-900 dark:text-gray-100 font-medium">
+                        Power BI
+                      </span>
+
+                      <span class="bg-white dark:bg-neutral-800 px-4 py-2 rounded-lg shadow-sm text-gray-900 dark:text-gray-100 font-medium">
+                        DAX
+                      </span>
+
+                      <span class="bg-white dark:bg-neutral-800 px-4 py-2 rounded-lg shadow-sm text-gray-900 dark:text-gray-100 font-medium">
+                        Power Query
+                      </span>
+
+                      <span class="bg-white dark:bg-neutral-800 px-4 py-2 rounded-lg shadow-sm text-gray-900 dark:text-gray-100 font-medium">
+                        Excel
+                      </span>
+                    </div>
+                  </div>
+
+                </div>
+              </div>
+
+              <!-- Superstore Sales & Profit Analytics Dashboard -->
+              <div class="project-card bg-gray-50 dark:bg-neutral-900 rounded-xl shadow-lg overflow-hidden mb-12">
+
+                <!-- Project Image -->
+                <div class="w-full bg-gray-100 dark:bg-neutral-950 flex justify-center items-center p-4">
+                  <img
+                    src="D:\Data\Myportfolio - Hesham\photo2.jpeg"
+                    alt="Superstore Sales & Profit Analytics Dashboard"
+                    class="w-full max-w-4xl h-auto max-h-[500px] object-contain rounded-lg"
+                  >
+                </div>
+
+                <!-- Project Content -->
+                <div class="p-6 md:p-8">
+
+                  <h3 class="text-2xl font-bold text-gray-900 dark:text-white">
+                    Superstore Sales &amp; Profit Analytics Dashboard
+                  </h3>
+
+                  <!-- Case Study -->
+                  <div class="mt-6 space-y-6 text-gray-700 dark:text-gray-300">
+
+                    <!-- Overview -->
+                    <div>
+                      <h2 class="text-xl font-bold text-amber-900 dark:text-amber-200 border-b-2 border-amber-200 dark:border-amber-800 pb-2 mb-3">
+                        Overview
+                      </h2>
+
+                      <p class="mt-1">
+                        An end-to-end Business Intelligence project analyzing the sales performance
+                        of a US-based retail company (Superstore) across four regions (West, East,
+                        South, and Central) from 2016 to 2019.
+                      </p>
+
+                      <p class="mt-3">
+                        The interactive Power BI dashboard helps management monitor sales,
+                        profitability, and customer behavior, identify business trends,
+                        and uncover opportunities to improve financial performance.
+                      </p>
+
+                      <!-- Key KPIs -->
+                      <h3 class="font-bold text-gray-900 dark:text-white mt-5 mb-3">
+                        Key Performance Indicators (KPIs)
+                      </h3>
+
+                      <ul class="list-disc list-inside space-y-2">
+                        <li><strong>Total Sales:</strong> 2.30M</li>
+                        <li><strong>Total Profit:</strong> 286.40K</li>
+                        <li><strong>Profit Margin:</strong> 12.47%</li>
+                        <li><strong>Order Count:</strong> 5K</li>
+                        <li><strong>Customer Count:</strong> 794</li>
+                      </ul>
+                    </div>
+
+                    <!-- What I Built -->
+                    <div>
+                      <h2 class="text-xl font-bold text-amber-900 dark:text-amber-200 border-b-2 border-amber-200 dark:border-amber-800 pb-2 mb-3">
+                        What I Built
+                      </h2>
+
+                      <ol class="list-decimal list-inside space-y-2">
+                        <li>
+                          <strong>KPI Cards:</strong>
+                          Five headline performance indicators for monitoring business performance.
+                        </li>
+
+                        <li>
+                          <strong>Sales Trend Over Time:</strong>
+                          Yearly sales line chart showing growth from 2016 to 2019.
+                        </li>
+
+                        <li>
+                          <strong>Sales by Category:</strong>
+                          Donut chart comparing revenue shares across Technology, Furniture,
+                          and Office Supplies.
+                        </li>
+
+                        <li>
+                          <strong>Profit by Region:</strong>
+                          Bar chart comparing profitability across the four regions.
+                        </li>
+
+                        <li>
+                          <strong>Sales by Customer Segment:</strong>
+                          Revenue comparison across Consumer, Corporate, and Home Office segments.
+                        </li>
+
+                        <li>
+                          <strong>Interactive Slicers:</strong>
+                          Region, Category, Ship Mode, Year, and Segment filters for dynamic analysis.
+                        </li>
+                      </ol>
+                    </div>
+
+                    <!-- Key Insights & Outcomes -->
+                    <div>
+                      <h2 class="text-xl font-bold text-amber-900 dark:text-amber-200 border-b-2 border-amber-200 dark:border-amber-800 pb-2 mb-3">
+                        Key Insights &amp; Outcomes
+                      </h2>
+
+                      <ol class="list-decimal list-inside space-y-3 mt-1">
+                        <li>
+                          <strong>Consistent Growth:</strong>
+                          Sales increased from approximately 484K in 2016 to 733K in 2019,
+                          with the strongest acceleration between 2017 and 2018.
+                        </li>
+
+                        <li>
+                          <strong>Category Performance:</strong>
+                          Technology leads with 36.4% of sales (836K), followed by Furniture
+                          (32.3%) and Office Supplies (31.3%).
+                        </li>
+
+                        <li>
+                          <strong>Regional Profit Gap:</strong>
+                          West generates the highest profit at approximately 108K, followed by
+                          East at 92K, while South (47K) and Central (40K) lag behind.
+                        </li>
+
+                        <li>
+                          <strong>Customer Segment Performance:</strong>
+                          Consumer customers generate approximately 1.16M in sales, ahead of
+                          Corporate (0.71M) and Home Office (0.43M).
+                        </li>
+
+                        <li>
+                          <strong>Profitability Opportunity:</strong>
+                          The 12.47% profit margin highlights an opportunity to review discounting,
+                          product costs, and other factors affecting profitability.
+                        </li>
+                      </ol>
+                    </div>
+
+                  </div>
+
+                  <!-- Technologies -->
+                  <div class="mt-6">
+                    <h2 class="text-xl font-bold text-amber-900 dark:text-amber-200 border-b-2 border-amber-200 dark:border-amber-800 pb-2 mb-3">
+                      Technologies
+                    </h2>
+
+                    <div class="flex flex-wrap gap-3">
+                      <span class="bg-white dark:bg-neutral-800 px-4 py-2 rounded-lg shadow-sm text-gray-900 dark:text-gray-100 font-medium">
+                        Power BI Desktop
+                      </span>
+
+                      <span class="bg-white dark:bg-neutral-800 px-4 py-2 rounded-lg shadow-sm text-gray-900 dark:text-gray-100 font-medium">
+                        DAX
+                      </span>
+
+                      <span class="bg-white dark:bg-neutral-800 px-4 py-2 rounded-lg shadow-sm text-gray-900 dark:text-gray-100 font-medium">
+                        Power Query (M)
+                      </span>
+
+                      <span class="bg-white dark:bg-neutral-800 px-4 py-2 rounded-lg shadow-sm text-gray-900 dark:text-gray-100 font-medium">
+                        Excel / CSV
+                      </span>
+
+                      <span class="bg-white dark:bg-neutral-800 px-4 py-2 rounded-lg shadow-sm text-gray-900 dark:text-gray-100 font-medium">
+                        Star Schema
+                      </span>
+                    </div>
+                  </div>
+
+                </div>
+              </div>
+              
+<!-- < FIFA World Cup 2026 Dashboard> -->
+ <div class="project-card bg-gray-50 dark:bg-neutral-900 rounded-xl shadow-lg overflow-hidden mb-12">
+
+    <!--Project Image-->  
+    <div class="w-full bg-gray-100 dark:bg-neutral-950 flex justify-center items-center p-4">
+        <img
+            src="D:\Data\Myportfolio - Hesham\photo3.jpeg"
+            alt="FIFA World Cup 2026 Analytics Dashboard"
+            class="w-full max-w-4xl h-auto max-h-[500px] object-contain rounded-lg"
+        >
+    </div>
+
+    <!-- Project Content -->
+    <div class="p-6 md:p-8">
+
+        <h3 class="text-2xl font-bold text-gray-900 dark:text-white mb-4">
+            FIFA World Cup 2026 Analytics Dashboard
+        </h3>
+
+        <!-- Overview -->
+        <div class="mb-6">
+            <h4 class="text-xl font-bold text-amber-900 dark:text-amber-200 border-b-2 border-amber-200 dark:border-amber-800 pb-2 mb-3">
+                Project Overview
+            </h4>
+            <p class="text-gray-700 dark:text-gray-300 leading-relaxed">
+                An interactive Power BI dashboard analyzing the FIFA World Cup 2026,
+                covering 48 teams, 104 matches, and the three host countries:
+                the United States, Canada, and Mexico. The dashboard provides
+                insights into match distribution, results, goals, and tournament stages.
+            </p>
+        </div>
+
+        <!-- KPIs -->
+        <div class="mb-6">
+            <h4 class="text-xl font-bold text-amber-900 dark:text-amber-200 border-b-2 border-amber-200 dark:border-amber-800 pb-2 mb-3">
+                Key Performance Indicators
+            </h4>
+
+            <ul class="list-disc list-inside text-gray-700 dark:text-gray-300 space-y-1">
+                <li>Total Matches: 104</li>
+                <li>Total Goals: 308</li>
+                <li>Participating Teams: 48</li>
+                <li>Home Wins: 51</li>
+                <li>Draws: 24</li>
+                <li>Away Wins: 29</li>
+                <li>Average Goals per Match: 2.96</li>
+            </ul>
+        </div>
+
+        <!-- Dashboard Features -->
+        <div class="mb-6">
+            <h4 class="text-xl font-bold text-amber-900 dark:text-amber-200 border-b-2 border-amber-200 dark:border-amber-800 pb-2 mb-3">
+                What I Built
+            </h4>
+
+            <ul class="list-disc list-inside text-gray-700 dark:text-gray-300 space-y-1">
+                <li>Interactive KPI cards summarizing tournament statistics.</li>
+                <li>Matches distribution by tournament stage.</li>
+                <li>Matches hosted by each country.</li>
+                <li>Daily match distribution using an area chart.</li>
+                <li>Interactive slicers for Group, Stage, Confederation, and Country.</li>
+            </ul>
+        </div>
+
+        <!-- Workflow -->
+        <div class="mb-6">
+            <h4 class="text-xl font-bold text-amber-900 dark:text-amber-200 border-b-2 border-amber-200 dark:border-amber-800 pb-2 mb-3">
+                Data Analysis & Modeling
+            </h4>
+
+            <ul class="list-disc list-inside text-gray-700 dark:text-gray-300 space-y-1">
+                <li>Cleaned and transformed data using Power Query.</li>
+                <li>Designed a data model with a fact table and dimensions for teams, stages, venues, countries, and dates.</li>
+                <li>Created DAX measures to calculate tournament KPIs and match statistics.</li>
+                <li>Designed an interactive dashboard to simplify tournament analysis.</li>
+            </ul>
+        </div>
+
+        <!-- Key Insights -->
+        <div class="mb-6">
+            <h4 class="text-xl font-bold text-amber-900 dark:text-amber-200 border-b-2 border-amber-200 dark:border-amber-800 pb-2 mb-3">
+                Key Insights
+            </h4>
+
+            <ul class="list-disc list-inside text-gray-700 dark:text-gray-300 space-y-1">
+                <li>The Group Stage accounts for approximately 72 matches, representing around 69% of the tournament.</li>
+                <li>The Round of 32 includes 16 matches, while the Round of 16 includes 8 matches.</li>
+                <li>Match results include 51 home wins, 29 away wins, and 24 draws.</li>
+                <li>The United States hosts approximately 78 matches, while Canada and Mexico host around 13 matches each.</li>
+                <li>The schedule reaches a peak of 6 matches per day, with quieter days featuring only one match.</li>
+            </ul>
+        </div>
+
+        <!-- Technologies -->
+        <div>
+            <h4 class="text-xl font-bold text-amber-900 dark:text-amber-200 border-b-2 border-amber-200 dark:border-amber-800 pb-2 mb-3">
+                Technologies Used
+            </h4>
+
+            <div class="flex flex-wrap gap-3">
+                <span class="bg-white dark:bg-neutral-800 px-4 py-2 rounded-lg shadow-sm text-gray-900 dark:text-gray-100 font-medium">Power BI Desktop</span>
+                <span class="bg-white dark:bg-neutral-800 px-4 py-2 rounded-lg shadow-sm text-gray-900 dark:text-gray-100 font-medium">DAX</span>
+                <span class="bg-white dark:bg-neutral-800 px-4 py-2 rounded-lg shadow-sm text-gray-900 dark:text-gray-100 font-medium">Power Query (M)</span>
+                <span class="bg-white dark:bg-neutral-800 px-4 py-2 rounded-lg shadow-sm text-gray-900 dark:text-gray-100 font-medium">Excel / CSV</span>
+                <span class="bg-white dark:bg-neutral-800 px-4 py-2 rounded-lg shadow-sm text-gray-900 dark:text-gray-100 font-medium">Data Modeling</span>
+            </div>
+        </div>
+
+    </div>
+  </div>
+                
+            </div>
+          </div>
+        </section>
+
+<!-- Courses Section -->
+<section id="courses" class="py-20 bg-white dark:bg-neutral-800 slide-up">
+  <div class="container mx-auto px-6">
+
+    <h2 class="text-3xl font-bold text-center mb-12 text-Brown-600 dark:text-Brown-400 fade-in">
+      Courses & Certificates
+    </h2>
+
+    <div class="max-w-6xl mx-auto grid grid-cols-1 md:grid-cols-3 gap-6">
+
+      <!-- Machine Learning - NTI -->
+      <!-- <div class="bg-gray-50 dark:bg-neutral-900 rounded-xl shadow-lg overflow-hidden fade-in"> -->
+
+        <!-- Certificate Image -->
+        <!-- <div class="w-full h-56 bg-gray-100 dark:bg-neutral-950 flex items-center justify-center p-4">
+          <img
+            src="YOUR_MACHINE_NTI_CERTIFICATE_IMAGE"
+            alt="Machine Learning NTI Certificate"
+            class="w-full h-full object-contain rounded-lg"
+          >
+        </div> -->
+
+        <!-- Course Content -->
+        <!-- <div class="p-6">
+
+          <h3 class="text-xl font-bold text-gray-900 dark:text-white">
+            Machine Learning Trainee – NTI
+          </h3>
+
+          <p class="text-sm font-medium text-blue-600 dark:text-blue-400 mt-2">
+            Apr 2026 – Jul 2026
+          </p>
+
+          <div class="mt-5 text-gray-700 dark:text-gray-300 leading-relaxed">
+
+            <p>
+              Completed practical training covering core Machine Learning concepts,
+              algorithms, data preprocessing, model training, and evaluation.
+            </p>
+
+            <p class="mt-3">
+              Applied Python and Machine Learning techniques to build and evaluate
+              models using real-world datasets.
+            </p>
+
+          </div>
+
+          <div class="mt-6">
+            <a
+              href="#"
+              target="_blank"
+              rel="noopener noreferrer"
+              class="w-full flex items-center justify-center px-5 py-3 rounded-lg font-semibold bg-blue-600 text-white hover:bg-blue-700 transition duration-200"
+            >
+              <ion-icon name="document-text-outline" class="text-xl mr-2"></ion-icon>
+              View Certificate
+            </a>
+          </div>
+
+        </div>
+      </div> -->
+
+
+      <!-- Data analyst - DEPI -->
+      <div class="bg-gray-50 dark:bg-neutral-900 rounded-xl shadow-lg overflow-hidden fade-in">
+
+        <!-- Certificate Image -->
+        <div class="w-full h-56 bg-gray-100 dark:bg-neutral-950 flex items-center justify-center p-4">
+          <img
+            src="YOUR_DEPI_CERTIFICATE_IMAGE"
+            alt="Machine Learning DEPI Certificate"
+            class="w-full h-full object-contain rounded-lg"
+          >
+        </div>
+
+        <!-- Course Content -->
+        <div class="p-6">
+
+          <h3 class="text-xl font-bold text-gray-900 dark:text-white">
+            Junior Data Analyst – DEPI
+          </h3>
+
+          <p class="text-sm font-medium text-Brown-600 dark:text-Brown-400 mt-2">
+            Jul 2026 – Present
+          </p>
+
+          <div class="mt-5 text-gray-700 dark:text-gray-300 leading-relaxed">
+
+            <p>
+              Trained in Excel, SQL, Power BI, Data Cleaning, Data Analysis,
+               Data Visualization, and Business Intelligence.
+            </p>
+
+            <p class="mt-3">
+
+              Applied data analysis concepts through practical, 
+              hands-on projects as part of the Digital Egypt Pioneers Initiative (DEPI) Data Analysis track
+            </p>
+
+          </div>
+
+          <div class="mt-6">
+            <a
+              href="#"
+              target="_blank"
+              rel="noopener noreferrer"
+              class="w-full flex items-center justify-center px-5 py-3 rounded-lg font-semibold bg-Brown-600 text-white hover:bg-Brown-700 transition duration-200"
+            >
+              <ion-icon name="document-text-outline" class="text-xl mr-2"></ion-icon>
+              View Certificate
+            </a>
+          </div>
+
+        </div>
+      </div>
+
+
+      <!-- Computer Vision - NTI -->
+      <!-- <div class="bg-gray-50 dark:bg-neutral-900 rounded-xl shadow-lg overflow-hidden fade-in">
+
+        Certificate Image
+        <div class="w-full h-56 bg-gray-100 dark:bg-neutral-950 flex items-center justify-center p-4">
+          <img
+            src="D:\Data\Myportfolio\computer vision certificate.png"
+            alt="Computer Vision NTI Certificate"
+            class="w-full h-full object-contain rounded-lg"
+          >
+        </div>
+
+        Course Content
+        <div class="p-6">
+
+          <h3 class="text-xl font-bold text-gray-900 dark:text-white">
+            Computer Vision Trainee – NTI
+          </h3>
+
+          <p class="text-sm font-medium text-Brown-600 dark:text-Brown-400 mt-2">
+            Aug 2026 – Sep 2026
+          </p>
+
+          <div class="mt-5 text-gray-700 dark:text-gray-300 leading-relaxed">
+
+            <p>
+              Completed practical training covering image processing, object detection,
+              image classification, and other Computer Vision concepts.
+            </p>
+
+            <p class="mt-3">
+              Applied Python and Computer Vision techniques to develop practical
+              solutions for image-based problems.
+            </p>
+
+          </div>
+
+          <div class="mt-6">
+            <a
+              href="https://drive.google.com/file/d/1XrfQ773c8neS55mprN0M9CWHsPZo5urp/view?usp=drivesdk"
+              target="_blank"
+              rel="noopener noreferrer"
+              class="w-full flex items-center justify-center px-5 py-3 rounded-lg font-semibold bg-blue-600 text-white hover:bg-blue-700 transition duration-200"
+            >
+              <ion-icon name="document-text-outline" class="text-xl mr-2"></ion-icon>
+              View Certificate
+            </a>
+          </div>
+
+        </div>
+      </div> -->
+
+    </div>
+
+  </div>
+</section>
+
+<!-- Contact Section -->
+<section id="contact" class="py-20 bg-gray-50 dark:bg-neutral-900 slide-up" style="animation-delay:0.5s">
+  <div class="container mx-auto px-6 text-center">
+
+    <h2 class="text-3xl font-bold mb-12 text-Brown-600 dark:text-Brown-400 fade-in">
+      Contact Me
+    </h2>
+
+    <div class="max-w-3xl mx-auto bg-white dark:bg-neutral-800 rounded-xl shadow-lg p-8 md:p-10 fade-in">
+
+      <h3 class="text-2xl font-semibold text-gray-900 dark:text-white mb-3">
+        Let's Work Together
+      </h3>
+
+      <p class="text-gray-600 dark:text-gray-300 mb-8">
+        Feel free to reach out for freelance opportunities, collaborations,
+        or any questions about my work.
+      </p>
+
+      <!-- Contact Information -->
+      <div class="space-y-4 mb-8">
+
+        <p class="text-gray-700 dark:text-gray-300">
+          <span class="font-semibold text-gray-900 dark:text-white">Email:</span>
+          <a
+            href="mailto:mohamedahmedkamal664@gmail.com"
+            class="text-Brown-600 dark:text-Brown-400 hover:underline ml-1"
+          >
+            heshamrabei726@gmail.com
+          </a>
+        </p>
+
+  
+          <p class="text-gray-700 dark:text-gray-300">
+              <span class="font-semibold text-gray-900 dark:text-white">Phone:</span>
+              <a
+                  href="https://wa.me/201104784616"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  class="hover:text-green-600 dark:hover:text-green-400 transition-colors duration-300"
+              >
+                  +20 01104784616
+              </a>
+          </p>
+
+
+      <!-- Social Links -->
+      <div class="flex flex-wrap justify-center gap-4">
+
+        <a
+          href="https://github.com/heshamrabei726-ux"
+          target="_blank"
+          rel="noopener noreferrer"
+          class="flex items-center justify-center px-6 py-3 bg-gray-800 dark:bg-gray-200 text-white dark:text-gray-900 rounded-lg font-semibold hover:bg-gray-700 dark:hover:bg-white transition duration-300"
+        >
+          <ion-icon name="logo-github" class="text-xl mr-2"></ion-icon>
+          GitHub
+        </a>
+
+        <a
+          href="https://www.linkedin.com/in/hesham-rabei-5760a12a2"
+          target="_blank"
+          rel="noopener noreferrer"
+          class="flex items-center justify-center px-6 py-3 bg-white dark:bg-neutral-800 border border-Brown-600 text-Brown-600 dark:text-Brown-400 rounded-lg font-semibold hover:bg-Brown-50 dark:hover:bg-neutral-700 transition duration-300"
+        >
+          <ion-icon name="logo-linkedin" class="text-xl mr-2"></ion-icon>
+          LinkedIn
+        </a>
+
+        <a
+          href="mailto:heshamrabei726@gmail.com"
+          class="flex items-center justify-center px-6 py-3 bg-white dark:bg-neutral-800 border border-Brown-600 text-Brown-600 dark:text-Brown-400 rounded-lg font-semibold hover:bg-Brown-50 dark:hover:bg-neutral-700 transition duration-300"
+        >
+          <ion-icon name="mail-outline" class="text-xl mr-2"></ion-icon>
+          Send Email
+        </a>
+
+      </div>
+
+    </div>
+  </div>
+</section>
+<script src="script.js"></script>
+</body>
+</html>

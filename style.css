@@ -1,0 +1,171 @@
+
+/* =======================
+   Base Colors
+======================= */
+html {
+    background-color: #FAF5EB;
+    color: #4B3621;
+    scroll-behavior: smooth;
+}
+
+html.dark {
+    background-color: #211A16;
+    color: #F3E6D0;
+}
+
+/* =======================
+   Section Backgrounds
+======================= */
+#hero {
+    background: linear-gradient(to bottom right, #C2A878, #8B7355);
+    color: #FFFFFF;
+}
+
+#about,
+#education,
+#services,
+#projects,
+#courses {
+    background: linear-gradient(to bottom, #FAF5EB, #EDE0CC);
+}
+
+#experience,
+#contact {
+    background: linear-gradient(to bottom, #FFFDF8, #EDE0CC);
+}
+
+#skills {
+    background: linear-gradient(to bottom, #F8F0E2, #E8D8BE);
+}
+
+/* Dark Mode Section Backgrounds */
+html.dark #about,
+html.dark #education,
+html.dark #services,
+html.dark #projects,
+html.dark #courses,
+html.dark #skills {
+    background: linear-gradient(to bottom, #35291F, #261D17);
+}
+
+html.dark #experience,
+html.dark #contact {
+    background: linear-gradient(to bottom, #261D17, #211A16);
+}
+
+/* =======================
+   Hero Text
+======================= */
+#hero h1 {
+    color: #FFFFFF;
+}
+
+#hero h2 {
+    color: #F5E6C8;
+}
+
+#hero p {
+    color: #FFF8EB;
+}
+
+/* Hero Buttons */
+#hero .fade-in a:first-child {
+    background-color: #FFF8EB;
+    color: #725637;
+}
+
+#hero .fade-in a:first-child:hover {
+    background-color: #EDE0CC;
+}
+
+#hero .fade-in a:last-child {
+    background-color: #725637;
+    color: #FFFFFF;
+}
+
+#hero .fade-in a:last-child:hover {
+    background-color: #59432E;
+}
+
+html.dark #hero img {
+    ring-color: #D6B98C;
+}
+
+/* =======================
+   Headings & Links
+======================= */
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    color: #725637;
+}
+
+html.dark h1,
+html.dark h2,
+html.dark h3,
+html.dark h4,
+html.dark h5,
+html.dark h6 {
+    color: #F3E6D0;
+}
+
+a {
+    color: #8B6F47;
+}
+
+a:hover {
+    color: #5F4630;
+}
+
+html.dark a {
+    color: #D6B98C;
+}
+
+html.dark a:hover {
+    color: #F3D9A8;
+}
+
+/* =======================
+   Skill Cards
+======================= */
+.skill-card {
+    background: #FFFDF8;
+    color: #4B3621;
+    box-shadow: 0 2px 6px rgba(75, 54, 33, 0.12);
+}
+
+.skill-card:hover {
+    background: #A88B60;
+    color: #FFFFFF;
+}
+
+html.dark .skill-card {
+    background: #35291F;
+    color: #F3E6D0;
+}
+
+html.dark .skill-card:hover {
+    background: #8B7355;
+    color: #FFFFFF;
+}
+
+/* =======================
+   Navbar
+======================= */
+nav a:hover {
+    color: #725637;
+}
+
+html.dark nav a:hover {
+    color: #D6B98C;
+}
+
+/* =======================
+   Section Navigation
+======================= */
+section[id] {
+    scroll-margin-top: 100px;
+}
